@@ -57,7 +57,9 @@ plugins:
         - index.md
         - community/index.md
         - blog/posts/*
-  - obsidian-bridge
+  - obsidian-bridge:
+      invalid_link_attributes:
+        - '.invalid'
   - rss:
       match_path: blog/posts/.*
       date_from_meta:
@@ -76,6 +78,7 @@ markdown_extensions:
   - admonition
   - attr_list
   - footnotes
+  - md_in_html
   - pymdownx.details
   - pymdownx.emoji:
       emoji_index: !!python/name:material.extensions.emoji.twemoji

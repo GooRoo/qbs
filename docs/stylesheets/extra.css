@@ -25,3 +25,8 @@
 	box-shadow: none;
 	transition: none;
 }
+
+a.invalid {
+	font-weight: bold;
+	color: red;
+}
