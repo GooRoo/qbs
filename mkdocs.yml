@@ -10,7 +10,6 @@ theme:
   # custom_dir: docs/overrides
   font:
     text: Titillium Web
-    code: Inconsolata
   favicon: assets/images/Cubes.svg
   logo: assets/images/Cubes.svg
   icon:
@@ -20,6 +19,7 @@ theme:
     - media: "(prefers-color-scheme: light)"
       scheme: default
       primary: custom
+      accent: custom
       toggle:
         icon: material/brightness-7
         name: Switch to dark mode
@@ -46,9 +46,7 @@ theme:
 
 plugins:
   - awesome-pages
-  - blog:
-      # categories_allowed:
-      #   - Release notes
+  - blog
   - git-authors:
       exclude:
         - index.md
