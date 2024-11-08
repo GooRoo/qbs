@@ -5,6 +5,7 @@ on:
     paths-ignore:
       - 'changelogs/**'
       - 'doc/**'
+      - 'docs/**'
 
 jobs:
   build-linux:

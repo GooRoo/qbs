@@ -1,0 +1,49 @@
+name: Build and Qbs docs
+
+on:
+  push:
+    paths:
+      - 'docs/**'
+      - 'examples/**'
+      - 'mkdocs.yml'
+      - 'pyproject.toml'
+      - 'uv.lock'
+      - 'VERSION'
+
+jobs:
+  build-docs:
+    name: 'Build Qbs Docs'
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Chackout the repository
+      uses: actions/checkout@v4
+
+    - name: Configure Git Credentials
+      run: |
+        git config user.name github-actions[bot]
+        git config user.email github-actions[bot]@users.noreply.github.com
+
+    # - name: Install libcairo
+    #   run: |
+    #     sudo apt update -y
+    #     sudo apt install -y libcairo2
+
+    - run: echo "cache_id=$(date --utc '+%V')" >> $GITHUB_ENV
+
+    - uses: actions/cache@v3
+      with:
+        key: mkdocs-material-${{ env.cache_id }}
+        path: .cache
+        restore-keys: |
+          mkdocs-material-
+
+    - name: Install uv
+      uses: astral-sh/setup-uv@v3
+
+    - name: Read version
+      id: version
+      run: echo "version=$(cat VERSION)" >> $GITHUB_OUTPUT
+
+    - name: Build common docs
+      run: uv run mkdocs gh-deploy --force
