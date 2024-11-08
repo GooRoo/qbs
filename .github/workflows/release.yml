@@ -4,6 +4,7 @@ on:
   push:
     branches-ignore:
       - 'gerrit/*'
+      - 'mkdocs'  # [TODO] @GooRoo: remove before merging
     tags:
       - 'v*'
 

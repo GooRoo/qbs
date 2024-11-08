@@ -6,6 +6,8 @@ on:
       - 'changelogs/**'
       - 'doc/**'
       - 'docs/**'
+    branches-ignore:  # [TODO] @GooRoo: remove before merging
+      - 'mkdocs'
 
 jobs:
   build-linux:
