@@ -7,7 +7,7 @@ edit_uri: edit/mkdocs/docs/  # [TODO] @GooRoo: change before merging
 
 theme:
   name: material
-  custom_dir: docs/overrides
+  # custom_dir: docs/overrides
   font:
     text: Titillium Web
     code: Inconsolata
