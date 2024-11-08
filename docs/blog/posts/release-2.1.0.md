@@ -11,7 +11,7 @@ The [Qbs build tool](http://qbs.io) version 2.1.0 is available.
 
 <!-- more -->
 
-Just as the [2.0 release](./release-2.0.0.md) was mostly about the JavaScript
+Just as the [[release-2.0.0|2.0 release]] was mostly about the JavaScript
 back-end switch, this one also features a major rewrite of the implementation, though with more
 direct impact on users.
 

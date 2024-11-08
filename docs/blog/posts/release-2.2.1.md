@@ -9,7 +9,7 @@ The [Qbs build tool](http://qbs.io) version 2.2 is available.
 
 ## What's new
 
-As already [hinted](./release-2.1.0.md) at last time, the main
+As already [[release-2.1.0|hinted]] at last time, the main
 feature in this release is the parallelization of the project resolving phase.
 
 <!-- more -->

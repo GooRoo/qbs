@@ -9,7 +9,7 @@ The [Qbs build tool](http://qbs.io) version 2.3.0 is available.
 
 ## What's new
 
-As [hinted](./release-2.2.1.md) at last time, the main
+As [[release-2.2.1|hinted]] at last time, the main
 feature in this release is the use of the new Language Protocol Server for "go to definition" in
 certain contexts and auto-completion.
 
@@ -35,7 +35,7 @@ the [qbspkgconfig](https://doc.qt.io/qbs/qml-qbsmoduleproviders-qbspkgconfig.htm
 In Qbs, module providers generate missing modules during the project configuration ("resolve")
 stage. Historically, we had only Qt and "fallback" module providers and there was no way to control
 which providers are run until we introduced "named" module providers in
-[Qbs 1.21](./release-1.21.md). At the same time, we've added the
+[[release-1.21|Qbs 1.21]]. At the same time, we've added the
 `qbspkgconfig` provider that reads .pc files directly, avoiding expensive invocations of the
 `pkg-config` tool. Since then, we had two almost identical providers that work on top of .pc files.
 However, the problem with the "fallback" provider is that it works differently from other
@@ -64,7 +64,7 @@ products are not traversed more than once anymore
 * Module properties are now accessible for groups in modules
   ([QBS-1770](https://bugreports.qt.io/browse/QBS-1770)).
 * The qbspkgconfig.mergeDependencies property was removed. This feature only existed because of
-  performance limitations which were fixed in [Qbs 2.1.0](./release-2.1.0.md).
+  performance limitations which were fixed in [[release-2.1.0|Qbs 2.1.0]].
 * ModuleProviders now support the
   [allowedValues](https://qbs.io//docs/qml-qbslanguageitems-propertyoptions/#allowedValues-prop)
   property of the PropertyOptions item ([QBS-1748](https://bugreports.qt.io/browse/QBS-1748)).

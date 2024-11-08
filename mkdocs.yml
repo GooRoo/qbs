@@ -32,22 +32,33 @@ theme:
         name: Switch to light mode
 
   features:
-    - content.action.edit
+    # - content.action.edit
     - content.code.copy
+    - navigation.expand
     - navigation.footer
     - navigation.indexes
-    - navigation.sections
+    # - navigation.sections
     - navigation.tabs
+    - navigation.tabs.sticky
     - navigation.top
     - search.highlight
+    - toc.follow
 
 plugins:
   - awesome-pages
   - blog:
       # categories_allowed:
       #   - Release notes
-  - git-authors
-  - git-revision-date-localized
+  - git-authors:
+      exclude:
+        - index.md
+        - community/index.md
+        - blog/posts/*
+  - git-revision-date-localized:
+      exclude:
+        - index.md
+        - community/index.md
+        - blog/posts/*
   - obsidian-bridge
   - rss:
       match_path: blog/posts/.*
@@ -78,6 +89,14 @@ markdown_extensions:
   - pymdownx.superfences
 
 extra:
+  generator: false
+  social:
+    - icon: fontawesome/brands/github
+      name: GitHub repository
+      link: https://github.com/qbs/qbs
+    - icon: fontawesome/brands/discord
+      name: Discord server
+      link: https://discord.gg/zhMHvC5GNa
   version:
     provider: mike
     default: latest

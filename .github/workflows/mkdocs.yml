@@ -17,7 +17,7 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-    - name: Chackout the repository
+    - name: Checkout the repository
       uses: actions/checkout@v4
 
     - name: Configure Git Credentials

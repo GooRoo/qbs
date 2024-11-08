@@ -40,7 +40,7 @@ using GitHub actions for [our CI](https://github.com/qbs/qbs/actions) as well as
 
 ## Future plans
 
-Recently, we had a major [release](./release-2.0.0.md) which replaced the QtScript
+Recently, we had a major [[release-2.0.0|release]] which replaced the QtScript
 backend (based on enormous JavaScriptCore) with a light-weight
 [QuickJS](https://bellard.org/quickjs/) Engine. As mentioned in the post, we will have a new
 implementation of the module loading in 2.1 release - the old code was quite obscure and had severe
