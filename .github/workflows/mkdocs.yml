@@ -3,6 +3,7 @@ name: Build and Qbs docs
 on:
   push:
     paths:
+      - '.github/workflows/mkdocs.yml'
       - 'docs/**'
       - 'examples/**'
       - 'mkdocs.yml'
