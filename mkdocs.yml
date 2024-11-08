@@ -1,0 +1,86 @@
+site_name: "Qbs: Build simply. Build quickly"
+site_url: https://gooroo.github.io/qbs/  # [TODO] @GooRoo: change before merging
+copyright: © 2016 The Qt Company Ltd.
+repo_url: https://github.com/GooRoo/qbs  # [TODO] @GooRoo: change before merging
+repo_name: GooRoo/qbs  # [TODO] @GooRoo: change before merging
+edit_uri: edit/mkdocs/docs/  # [TODO] @GooRoo: change before merging
+
+theme:
+  name: material
+  custom_dir: docs/overrides
+  font:
+    text: Titillium Web
+    code: Inconsolata
+  favicon: assets/images/Cubes.svg
+  logo: assets/images/Cubes.svg
+  icon:
+    repo: fontawesome/brands/github
+
+  palette:
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: custom
+      toggle:
+        icon: material/brightness-7
+        name: Switch to dark mode
+
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: custom
+      toggle:
+        icon: material/brightness-4
+        name: Switch to light mode
+
+  features:
+    - content.action.edit
+    - content.code.copy
+    - navigation.footer
+    - navigation.indexes
+    - navigation.sections
+    - navigation.tabs
+    - navigation.top
+    - search.highlight
+
+plugins:
+  - awesome-pages
+  - blog:
+      # categories_allowed:
+      #   - Release notes
+  - git-authors
+  - git-revision-date-localized
+  - obsidian-bridge
+  - rss:
+      match_path: blog/posts/.*
+      date_from_meta:
+        as_creation: date
+      categories:
+        - categories
+        - tags
+  - search
+  - social:
+      cards_layout_options:
+        background_color: '#19EB9A'
+        color: '#000000'
+        font_family: Titillium Web
+
+markdown_extensions:
+  - admonition
+  - attr_list
+  - footnotes
+  - pymdownx.details
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+      options:
+        custom_icons:
+          - docs/overrides/.icons
+  - pymdownx.snippets
+  - pymdownx.superfences
+
+extra:
+  version:
+    provider: mike
+    default: latest
+
+extra_css:
+  - stylesheets/extra.css

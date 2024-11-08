@@ -1,0 +1,23 @@
+<svg width="150" height="150" viewBox="0 0 150 150" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M40.775 65.5L74.55 85V124L40.775 143.5L7 124V85L40.775 65.5Z" fill="url(#paint0_radial)"/>
+<path d="M74.55 85L40.775 65.5L7 85M74.55 85V124L40.775 143.5M74.55 85L40.775 104.5M40.775 143.5L7 124V85M40.775 143.5L40.775 104.5M7 85L40.775 104.5" stroke="white" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M108.55 65.5L142.325 85V124L108.55 143.5L74.775 124V85L108.55 65.5Z" fill="url(#paint1_radial)"/>
+<path d="M142.325 85L108.55 65.5L74.775 85M142.325 85V124L108.55 143.5M142.325 85L108.55 104.5M108.55 143.5L74.775 124V85M108.55 143.5L108.55 104.5M74.775 85L108.55 104.5" stroke="white" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M74.55 7L108.325 26.5V65.5L74.55 85L40.775 65.5V26.5L74.55 7Z" fill="url(#paint2_radial)"/>
+<path d="M108.325 26.5L74.55 7L40.775 26.5M108.325 26.5V65.5L74.55 85M108.325 26.5L74.55 46M74.55 85L40.775 65.5V26.5M74.55 85L74.55 46M40.775 26.5L74.55 46" stroke="white" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/>
+<defs>
+<radialGradient id="paint0_radial" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(40.775 104.5) rotate(90) scale(39 33.775)">
+<stop stop-color="#1FF1A0"/>
+<stop offset="1" stop-color="#00D485"/>
+</radialGradient>
+<radialGradient id="paint1_radial" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(108.55 104.5) rotate(90) scale(39 33.775)">
+<stop stop-color="#44F0D3"/>
+<stop offset="1" stop-color="#00D3B8"/>
+<stop offset="1" stop-color="#00D3B8"/>
+</radialGradient>
+<radialGradient id="paint2_radial" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(74.55 46) rotate(90) scale(39 33.775)">
+<stop stop-color="#59F07C"/>
+<stop offset="1" stop-color="#3DD425"/>
+</radialGradient>
+</defs>
+</svg>
