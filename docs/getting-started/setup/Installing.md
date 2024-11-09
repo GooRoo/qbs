@@ -11,7 +11,7 @@ installers. You can find the `qbs` executable in the `bin` directory of
 Qt Creator, or within the application bundle's `MacOS` directory on macOS.
 
 Qbs can also be built locally from sources. For more information, see
-[[Appendix A: Building Qbs]].
+[[Appendix A. Building Qbs|Appendix A: Building Qbs]].
 
 ## Windows
 

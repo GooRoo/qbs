@@ -20,7 +20,10 @@
 [data-md-color-scheme="slate"] {
 	--md-accent-fg-color: var(--md-primary-fg-color--light);
 }
-	
+
+.md-grid {
+	max-width: 1600px;
+}
 .md-header--shadow {
 	box-shadow: none;
 	transition: none;
@@ -29,4 +32,8 @@
 a.invalid {
 	font-weight: bold;
 	color: red;
+}
+
+.nw {
+	white-space: nowrap;
 }

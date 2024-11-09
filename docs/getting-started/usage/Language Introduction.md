@@ -50,7 +50,7 @@ C++ compiler. For more information about Qbs modules, see [[Modules]].
 
 
 ## Reusing Project File Code
-QML-like inheritance works also in \QBS.
+QML-like inheritance works also in Qbs.
 
 ```qml title="CrazyProduct.qbs"
 Product {

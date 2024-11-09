@@ -46,7 +46,7 @@ qbs config --list profiles
 Some toolchains, especially for bare-metal targets, may require additional
 module properties. Those can be added with the [[config]] or the
 [[config-ui]] tools. Now you should be ready to build your first project
-with \QBS. Go into examples/helloworld-minimal and type:
+with Qbs. Go into examples/helloworld-minimal and type:
 
 ```sh
 qbs build profile:<profile name>

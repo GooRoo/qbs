@@ -1,3 +1,12 @@
 nav:
   - index.md
   - Language Introduction.md
+  - Building Applications.md
+  - Running Applications.md
+  - Installing Files.md
+  - Using the Shell.md
+  - Generators.md
+  - Multiplexing.md
+  - Custom Modules and Items.md
+  - Special Property Values.md
+  - Module Providers.md

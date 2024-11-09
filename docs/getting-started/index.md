@@ -10,11 +10,11 @@ software project, regardless of programming language, toolkit, or libraries used
      Please report bugs and suggestions to the [Qt Bug Tracker](https://bugreports.qt.io/).
 
 - [[Introduction]]
-- [[Setup]]
+- [[setup/index|Setup]]
     - [[Installing]]
     - [[Configuring Profiles and Preferences]]
     - [[Managing Qt Versions]]
-- [[Usage]]
+- [[usage/index|Usage]]
     - [[Language Introduction]]
     - [[Building Applications]]
     - [[Running Applications]]
@@ -48,7 +48,7 @@ software project, regardless of programming language, toolkit, or libraries used
     - [[List of Modules]]
     - [[List of Module Providers]]
     - [[Command and JavaScriptCommand]]
-- [[Appendix A: Building Qbs]]
+- [[Appendix A. Building Qbs|Appendix A: Building Qbs]]
 - [[Appendix B: Migrating from Other Build Systems]]
 - [[Appendix C: The JSON API]]
-- [[Appendix D: Licenses and Code Attributions]]
+- [[Appendix D. Licenses and Code Attributions.md|Appendix D: Licenses and Code Attributions]]
