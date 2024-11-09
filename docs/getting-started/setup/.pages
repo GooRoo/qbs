@@ -1,0 +1,5 @@
+nav:
+  - index.md
+  - Installing.md
+  - Configuring Profiles and Preferences.md
+  - Managing Qt Versions.md

@@ -2,10 +2,12 @@
 title: Introduction
 ---
 
+# Introduction
+
 Qbs is a build automation tool designed to conveniently manage the build
 process of software projects across multiple platforms.
 
-# Features
+## Features
 
 Qbs provides the following benefits:
 
@@ -17,7 +19,7 @@ Qbs provides the following benefits:
 - Easy integration to IDEs
 
 
-## Declarative Paradigm
+### Declarative Paradigm
 
 When writing a project, it is important to describe the build tasks and
 dependencies between them, rather than the build order. It is difficult to
@@ -49,7 +51,7 @@ Products and projects can contain _probes_ that are run prior to building,
 for instance to locate dependent headers, libraries, and other files outside
 the project directory.
 
-## Well-Defined Language
+### Well-Defined Language
 
 Qbs projects are specified in a QML dialect. QML is a concise, easy to
 learn, and intuitive language that is used successfully in the Qt project.
@@ -82,7 +84,7 @@ Application {
 
 For more information, see [[Language Introduction]].
 
-## Platform and Programming Language Independence
+### Platform and Programming Language Independence
 
 Qbs can be used for any software project, regardless of programming
 language, toolkit, or libraries used. Qbs has built-in support for
@@ -134,7 +136,7 @@ used to distribute applications and installers on macOS. The
 [[innosetup]], [[nsis]], and [[wix]] modules contain properties and rules
 for building installers for Windows platforms.
 
-## Correct and Fast Incremental Builds
+### Correct and Fast Incremental Builds
 
 Qbs is an all-in-one tool that generates a build graph from a high-level
 project description (like qmake or CMake) and additionally undertakes the
@@ -180,7 +182,7 @@ If the project files were not changed, the build graph is loaded from disk.
 It is stored in a binary format that can be loaded much faster than the real
 project files. The project files are parsed only if they were changed.
 
-## Extensible Architecture
+### Extensible Architecture
 
 You can create your own custom [[List of Modules|modules]] and
 [[List of Language Items|items]] and make Qbs aware of them.
@@ -198,7 +200,7 @@ Project {
 
 For more information, see [[Custom Modules and Items]].
 
-## IDE Integration
+### IDE Integration
 
 Qbs can be used not only from the command line, but also in combination
 with an IDE, such as Qt Creator or Visual Studio Code. These IDEs directly
@@ -210,7 +212,7 @@ In addition, Qbs can generate projects for Visual Studio, IAR EW, and
 Keil uVision, but it still is an experimental option. For more information,
 see [[Generators]].
 
-### Qt Creator
+#### Qt Creator
 
 [Qt Creator](http://doc.qt.io/qtcreator/index.html) provides accurate
 information about the build progress and displays a project tree that
@@ -221,7 +223,7 @@ files keeps the existing project file structure intact.
 For more information about using Qbs to build projects from Qt Creator, see
 [Setting Up Qbs](http://doc.qt.io/qtcreator/creator-project-qbs.html).
 
-### Visual Studio Code
+#### Visual Studio Code
 
 [Visual Studio Code](https://code.visualstudio.com/) provides the
 [qbs-community](https://marketplace.visualstudio.com/items?itemName=qbs-community.qbs-tools) plugin that provides accurate information about the build progress
@@ -231,7 +233,7 @@ Also, it can provide low-level information, such as the file system structure.
 For more information about using Qbs to build projects from Visual Studio Code,
 see [How To](https://github.com/denis-shienkov/vscode-qbs/blob/master/docs/how-to.md).
 
-# Build Process
+## Build Process
 
 <figure markdown="span">
     ![[qbs-build-process.png]]

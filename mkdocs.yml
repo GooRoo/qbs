@@ -86,7 +86,12 @@ markdown_extensions:
       options:
         custom_icons:
           - docs/overrides/.icons
-  - pymdownx.snippets
+  - pymdownx.highlight
+  - pymdownx.inlinehilite
+  - pymdownx.keys
+  - pymdownx.snippets:
+      auto_append:
+        - docs/includes/known_links.md
   - pymdownx.superfences
 
 extra:
