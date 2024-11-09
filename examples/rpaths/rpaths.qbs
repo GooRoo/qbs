@@ -3,7 +3,7 @@ import qbs.FileInfo
 Project {
     condition: qbs.targetOS.contains("unix")
 
-    //! [0]
+    // --8<-- [start:snippet0]
     DynamicLibrary {
         Depends { name: "cpp" }
         Depends { name: "bundle" }
@@ -20,9 +20,9 @@ Project {
         install: true
         installDir: "examples/lib"
     }
-    //! [0]
+    // --8<-- [end:snippet0]
 
-    //! [1]
+    // --8<-- [start:snippet1]
     DynamicLibrary {
         Depends { name: "cpp" }
         Depends { name: "bundle" }
@@ -40,9 +40,9 @@ Project {
         install: true
         installDir: "examples/lib"
     }
-    //! [1]
+    // --8<-- [end:snippet1]
 
-    //! [2]
+    // --8<-- [start:snippet2]
     CppApplication {
         Depends { name: "bundle" }
         Depends { name: "LibraryA" }
@@ -57,5 +57,5 @@ Project {
         install: true
         installDir: "examples/bin"
     }
-    //! [2]
+    // --8<-- [end:snippet2]
 }
