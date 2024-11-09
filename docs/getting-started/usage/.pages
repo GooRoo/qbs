@@ -4,6 +4,7 @@ nav:
   - Building Applications.md
   - Running Applications.md
   - Installing Files.md
+  - Target Platforms: targets
   - Using the Shell.md
   - Generators.md
   - Multiplexing.md

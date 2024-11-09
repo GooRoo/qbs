@@ -19,7 +19,7 @@ software project, regardless of programming language, toolkit, or libraries used
     - [[Building Applications]]
     - [[Running Applications]]
     - [[Installing Files]]
-    - [[Target Platforms]]
+    - [[targets/index|Target Platforms]]
     - [[Using the Shell]]
     - [[Generators]]
     - [[Multiplexing]]

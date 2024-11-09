@@ -35,7 +35,7 @@ theme:
     # - content.action.edit
     - content.code.annotate
     - content.code.copy
-    - navigation.expand
+    # - navigation.expand
     - navigation.footer
     - navigation.indexes
     - navigation.sections

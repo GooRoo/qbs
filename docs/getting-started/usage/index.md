@@ -9,7 +9,7 @@ title: Usage
 - [[Building Applications]]
 - [[Running Applications]]
 - [[Installing Files]]
-- [[Target Platforms]]
+- [[targets/index|Target Platforms]]
 - [[Using the Shell]]
 - [[Generators]]
 - [[Multiplexing]]
