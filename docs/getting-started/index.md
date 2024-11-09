@@ -39,5 +39,5 @@ software project, regardless of programming language, toolkit, or libraries used
     - [[Command and JavaScriptCommand]]
 - [[Appendix A. Building Qbs|Appendix A: Building Qbs]]
 - [[Appendix B: Migrating from Other Build Systems]]
-- [[Appendix C: The JSON API]]
+- [[Appendix C. The JSON API]]
 - [[Appendix D. Licenses and Code Attributions.md|Appendix D: Licenses and Code Attributions]]
