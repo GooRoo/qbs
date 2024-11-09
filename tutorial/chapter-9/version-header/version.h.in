@@ -1,9 +1,8 @@
-//! [0]
-// version-header/version.h.in
+// --8<-- [start:snippet0]
 #ifndef VERSION_H
 #define VERSION_H
 
 const char kProductVersion[] = "${PRODUCT_VERSION}";
 
 #endif // VERSION_H
-//! [0]
+// --8<-- [end:snippet0]

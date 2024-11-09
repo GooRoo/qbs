@@ -1,4 +1,4 @@
-// ![0]
+// --8<-- [start:snippet0]
 Library {
     Depends { name: "cpp" }
     Depends { name: "mybuildconfig" }
@@ -23,4 +23,4 @@ Library {
     Depends { name: "bundle" }
     bundle.isBundle: false
 }
-// ![0]
+// --8<-- [end:snippet0]

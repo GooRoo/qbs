@@ -1,10 +1,8 @@
-//! [0]
-// app/app.qbs
-
+// --8<-- [start:snippet0]
 MyApplication {
     Depends { name: "mylib" }
     name: "My Application"
     targetName: "myapp"
     files: "main.c"
 }
-//! [0]
+// --8<-- [end:snippet0]

@@ -1,6 +1,6 @@
-//! [5]
-// version-header/version-header.qbs
-//! [0]
+// --8<-- [start:snippet5]
+
+// --8<-- [start:snippet0]
 import qbs.TextFile
 
 Product {
@@ -8,24 +8,24 @@ Product {
     type: "hpp"
 
     Depends { name: "mybuildconfig" }
-//! [0]
+// --8<-- [end:snippet0]
 
-//! [1]
+// --8<-- [start:snippet1]
     Group {
         files: ["version.h.in"]
         fileTags: ["version_h_in"]
     }
-//! [1]
+// --8<-- [end:snippet1]
 
-//! [2]
+// --8<-- [start:snippet2]
     Rule {
         inputs: ["version_h_in"]
         Artifact {
             filePath: "version.h"
             fileTags: "hpp"
         }
-//! [2]
-//! [3]
+// --8<-- [end:snippet2]
+// --8<-- [start:snippet3]
         prepare: {
             var cmd = new JavaScriptCommand();
             cmd.description = "generating " + output.fileName;
@@ -44,14 +44,14 @@ Product {
             }
             return cmd;
         }
-//! [3]
+// --8<-- [end:snippet3]
     }
 
-//! [4]
+// --8<-- [start:snippet4]
     Export {
         Depends { name: "cpp" }
         cpp.includePaths: exportingProduct.buildDirectory
     }
-//! [4]
+// --8<-- [end:snippet4]
 }
-//! [5]
+// --8<-- [end:snippet5]

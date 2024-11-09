@@ -1,4 +1,4 @@
-//![0]
+// --8<-- [start:snippet0]
 #include <lib.h>
 #include <version.h>
 
@@ -11,4 +11,4 @@ int main()
     printf("ProductVersion = %s\n", kProductVersion);
     return 0;
 }
-//![0]
+// --8<-- [end:snippet0]

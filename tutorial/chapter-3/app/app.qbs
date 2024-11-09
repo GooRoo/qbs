@@ -1,5 +1,4 @@
-//! [1]
-// app/app.qbs
+// --8<-- [start:snippet1]
 import qbs.FileInfo
 
 CppApplication {
@@ -12,7 +11,7 @@ CppApplication {
     consoleApplication: true
     install: true
 
-    //! [0]
+    // --8<-- [start:snippet0]
     cpp.rpaths: {
         if (!cpp.rpathOrigin)
             return [];
@@ -24,6 +23,6 @@ CppApplication {
                     FileInfo.joinPaths("/", "lib")))
         ];
     }
-    //! [0]
+    // --8<-- [end:snippet0]
 }
-//! [1]
+// --8<-- [end:snippet1]

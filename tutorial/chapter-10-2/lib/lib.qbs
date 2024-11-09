@@ -1,5 +1,4 @@
-//! [0]
-// lib/lib.qbs
+// --8<-- [start:snippet0]
 DynamicLibrary {
     condition: {
         if (qbs.toolchainType === "msvc"
@@ -24,3 +23,4 @@ DynamicLibrary {
     Depends { name: "bundle" }
     bundle.isBundle: false
 }
+// --8<-- [end:snippet0]

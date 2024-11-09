@@ -1,6 +1,4 @@
-//! [0]
-// qbs/imports/MyApplication.qbs
-
+// --8<-- [start:snippet0]
 import qbs.FileInfo
 
 CppApplication {
@@ -20,4 +18,4 @@ CppApplication {
         ];
     }
 }
-//! [0]
+// --8<-- [end:snippet0]

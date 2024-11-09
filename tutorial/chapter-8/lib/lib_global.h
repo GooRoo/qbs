@@ -9,8 +9,7 @@
 #define MY_LIB_DECL_IMPORT __attribute__((visibility("default")))
 #endif
 
-// ![0]
-// lib/lib_global.h
+// --8<-- [start:snippet0]
 #if defined(MYLIB_STATIC_LIBRARY)
 #define MYLIB_EXPORT
 #else
@@ -20,6 +19,6 @@
 #define MYLIB_EXPORT MY_LIB_DECL_IMPORT
 #endif
 #endif
-// ![0]
+// --8<-- [end:snippet0]
 
 #endif // LIB_GLOBAL_H

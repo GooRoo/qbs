@@ -2,8 +2,7 @@ DynamicLibrary {
     version: project.version
     install: true
     installDebugInformation: project.installDebugInformation
-//! [0]
-// qbs/imports/MyLibrary.qbs
+// --8<-- [start:snippet0]
     // ...
     Depends { name: "mybuildconfig" }
     installDir: mybuildconfig.libInstallDir
@@ -15,7 +14,7 @@ DynamicLibrary {
 
     Export {
     // ...
-//! [0]
+// --8<-- [end:snippet0]
         Depends { name: "cpp" }
         cpp.includePaths: [exportingProduct.sourceDirectory]
     }

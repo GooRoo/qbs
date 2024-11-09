@@ -1,6 +1,4 @@
-//! [0]
-// lib/lib.qbs
-
+// --8<-- [start:snippet0]
 MyLibrary {
     name: "mylib"
     files: [
@@ -10,4 +8,4 @@ MyLibrary {
     ]
     cpp.defines: base.concat(["CRUCIAL_DEFINE"])
 }
-//! [0]
+// --8<-- [end:snippet0]

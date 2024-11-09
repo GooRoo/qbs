@@ -1,6 +1,4 @@
-//! [0]
-// test/test.c
-
+// --8<-- [start:snippet0]
 #include "lib.h"
 
 #include <stdio.h>
@@ -19,4 +17,4 @@ int main(int argc, char *argv[])
     }
     return 0;
 }
-//! [0]
+// --8<-- [end:snippet0]

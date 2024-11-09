@@ -1,6 +1,4 @@
-//! [0]
-// lib/lib.qbs
-
+// --8<-- [start:snippet0]
 DynamicLibrary {
     name: "mylib"
     files: [
@@ -23,4 +21,4 @@ DynamicLibrary {
     Depends { name: "bundle" }
     bundle.isBundle: false
 }
-//! [0]
+// --8<-- [end:snippet0]

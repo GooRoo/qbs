@@ -7,14 +7,13 @@ Project {
 
     name: "My Project"
     minimumQbsVersion: "2.0"
-    //! [0]
-    // myproject.qbs
+    // --8<-- [start:snippet0]
     references: [
         "app/app.qbs",
         "lib/lib.qbs",
         "version-header/version-header.qbs",
     ]
-    //! [0]
+    // --8<-- [end:snippet0]
     qbsSearchPaths: "qbs"
 
     SubProject {

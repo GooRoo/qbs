@@ -1,5 +1,5 @@
 
-//! [0]
+// --8<-- [start:snippet0]
 
 // lib/lib.cpp
 #include "lib.h"
@@ -13,4 +13,4 @@ const char *get_string()
     return "Hello from library";
 }
 
-//! [0]
+// --8<-- [end:snippet0]

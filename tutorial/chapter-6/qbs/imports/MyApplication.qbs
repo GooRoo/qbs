@@ -1,13 +1,13 @@
 import qbs.FileInfo
 
-//! [0]
+// --8<-- [start:snippet0]
 CppApplication {
     version: project.version
     consoleApplication: true
     install: true
     installDebugInformation: project.installDebugInformation
     // ...
-    //! [0]
+    // --8<-- [end:snippet0]
 
     cpp.rpaths: {
         if (!cpp.rpathOrigin)

@@ -1,4 +1,4 @@
-//! [0]
+// --8<-- [start:snippet0]
 Project {
    name: "My Project"
    minimumQbsVersion: "2.0"
@@ -8,4 +8,4 @@ Project {
    ]
    qbsSearchPaths: "qbs"
 }
-//! [0]
+// --8<-- [end:snippet0]

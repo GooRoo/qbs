@@ -1,6 +1,4 @@
-//! [0]
-// qbs/imports/MyLibrary.qbs
-
+// --8<-- [start:snippet0]
 DynamicLibrary {
     version: "1.0.0"
     install: true
@@ -18,4 +16,4 @@ DynamicLibrary {
     Depends { name: 'bundle' }
     bundle.isBundle: false
 }
-//! [0]
+// --8<-- [end:snippet0]

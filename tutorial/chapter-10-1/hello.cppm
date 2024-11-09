@@ -1,5 +1,4 @@
-//![0]
-// hello.cppm
+// --8<-- [start:snippet0]
 module;
 
 #include <iostream>
@@ -15,4 +14,4 @@ void printHello(std::string_view name)
 }
 
 } // namespace Hello
-//![0]
+// --8<-- [end:snippet0]

@@ -1,4 +1,4 @@
-//! [0]
+// --8<-- [start:snippet0]
 CppApplication {
     name: "My Application"
     targetName: "myapp"
@@ -9,4 +9,4 @@ CppApplication {
     install: true
     installDebugInformation: true
 }
-//! [0]
+// --8<-- [end:snippet0]

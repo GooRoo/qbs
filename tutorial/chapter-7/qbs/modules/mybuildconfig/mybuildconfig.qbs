@@ -1,13 +1,12 @@
 import qbs.FileInfo
 
-//! [1]
-//! [0]
-// qbs/modules/mybuildconfig.qbs
+// --8<-- [start:snippet1]
+// --8<-- [start:snippet0]
 Module {
     property string appInstallDir: "bin"
     property string libDirName: "lib"
     property string libInstallDir: qbs.targetOS.contains("windows") ? appInstallDir : libDirName
-    //! [0]
+    // --8<-- [end:snippet0]
 
     Depends { name: "cpp" }
 
@@ -23,4 +22,4 @@ Module {
 
     cpp.rpaths: libRPaths
 }
-//! [1]
+// --8<-- [end:snippet1]

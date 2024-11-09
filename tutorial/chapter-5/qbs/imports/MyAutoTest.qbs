@@ -1,7 +1,5 @@
-//! [0]
-// qbs/imports/MyAutoTest.qbs
-
+// --8<-- [start:snippet0]
 MyApplication {
     type: base.concat(["autotest"])
 }
-//! [0]
+// --8<-- [end:snippet0]

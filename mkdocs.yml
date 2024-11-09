@@ -93,6 +93,7 @@ markdown_extensions:
   - pymdownx.snippets:
       auto_append:
         - docs/includes/known_links.md
+      dedent_subsections: true
   - pymdownx.superfences
 
 extra:

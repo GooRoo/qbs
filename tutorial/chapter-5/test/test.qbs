@@ -1,9 +1,7 @@
-//! [0]
-// test/test.qbs
-
+// --8<-- [start:snippet0]
 MyAutoTest {
     Depends { name: "mylib" }
     name: "mytest"
     files: "test.c"
 }
-//! [0]
+// --8<-- [end:snippet0]

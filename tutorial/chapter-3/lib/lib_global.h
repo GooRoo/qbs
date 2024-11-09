@@ -1,6 +1,4 @@
-//! [0]
-// lib/lib_global.h
-
+// --8<-- [start:snippet0]
 #ifndef LIB_GLOBAL_H
 #define LIB_GLOBAL_H
 
@@ -20,4 +18,4 @@
 
 #endif // LIB_GLOBAL_H
 
-//! [0]
+// --8<-- [end:snippet0]
