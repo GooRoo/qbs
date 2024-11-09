@@ -9,7 +9,7 @@ title: 'Appendix D: Licenses and Code Attributions'
 The Qbs library and tools are available under commercial licenses from
 [The Qt Company][Qt Licensing]. In addition, they are available under
 [[#GNU Lesser General Public License, Version 3]] (LGPL version 3) and
-[GNU General Public License, version 2](https://www.gnu.org/licenses/gpl-2.0.html) (GPL version 2).
+[GNU General Public License, version 2][GNU General Public License, version 2] (GPL version 2).
 
 Shared functionality, which might be pulled in by user build scripts, is
 available under commercial licenses,
