@@ -492,7 +492,6 @@ No reply will be sent.
 While a request is being handled, Qbs may emit progress information in order
 to enable client code to display a progress bar.
 
-\target task-started
 ### The `task-started` Message
 
 This is always the first progress-related message for a specific request.
@@ -501,12 +500,10 @@ It consists of a string property `description`, whose value can be displayed
 to users, and an integer property `max-progress` that indicates which
 progress value corresponds to 100 per cent.
 
-\target task-progress
 ### The `task-progress` Message
 
 This message updates the progress via an integer property `progress`.
 
-\target new-max-progress
 ### The `new-max-progress` Message
 
 This message is emitted if the original estimated maximum progress has
@@ -518,13 +515,11 @@ value from a preceding [[#The task-started Message|task-started]] message.
 There are two types of messages that purely contain information to be
 presented to users.
 
-\target log-data
 ### The `log-data` Message
 
 This object has a string property `message`, which is the text to be
 shown to the user.
 
-\target warning-message
 ### The `warning` Message
 
 This message has a single property `warning` of type [[#ErrorInfo]].
