@@ -29,6 +29,10 @@
 	transition: none;
 }
 
+.md-typeset a {
+	font-weight: 600;
+}
+
 a.invalid {
 	font-weight: bold;
 	color: red;
