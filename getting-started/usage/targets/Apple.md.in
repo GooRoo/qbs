@@ -1,0 +1,80 @@
+<!-- --8<-- [start:xcode] -->
+
+!!! note
+
+    Qbs does not yet support the Swift programming language.
+
+The [xcode](xcode){.invalid} module contains properties and rules for Xcode-based
+development.
+
+<!-- --8<-- [end:xcode] -->
+
+<!-- --8<-- [start:building-user-interfaces] -->
+
+## Building User Interfaces
+
+The [ib](ib){.invalid} module contains properties and rules for building
+Interface Builder documents, storyboards, asset catalogs, and icon sets.
+
+<!-- --8<-- [end:building-user-interfaces] -->
+
+<!-- --8<-- [start:creating-app-bundles] -->
+
+## Creating App Bundles
+
+The [bundle](bundle){.invalid} module contains properties and rules for
+building and working with Core Foundation bundles (application bundles and
+frameworks) on Apple platforms.
+
+To build an application product as a bundle, or a dynamic or static library
+product as a framework, add a dependency on the bundle module and set the
+[bundle.isBundle](bundle#isBundle){.invalid} property to `true`:
+
+```qml
+Depends { name: "bundle" }
+bundle.isBundle: true
+```
+
+Qbs also provides a number of powerful features to assist in creating the
+Info.plist file that is part of your bundle. In fact, you do not need to
+provide an Info.plist file at all. Instead, Qbs will generate one
+automatically with the necessary keys, based on the values of module
+properties set in the product.
+
+If you do specify an Info.plist file, Qbs may still inject additional keys
+into the final output from other sources. One notable source of Info.plist
+keys are _partial_ Info.plist files which are generated as a result of
+compiling other resources like asset catalogs, XIBs/NIBs, and storyboards.
+
+You may also use the `bundle.infoPlist` property to apply a set of
+key-value pairs to be added to the final Info.plist. This can be used
+instead of or in addition to an actual Info.plist file on disk.
+
+<!-- --8<-- [end:creating-app-bundles] -->
+
+<!-- --8<-- [start:architectures-and-variants] -->
+
+## Multiple Architectures and Build Variants
+
+Qbs uses [multiplexing](../Multiplexing.md) to create multi-architecture
+_fat_ binaries and multi-variant frameworks, where a single framework can
+contain both a release and debug build of a library on Apple platforms.
+
+You can set the `qbs.architectures` property to a list of CPU architectures
+(such as `x86`, `x86_64`, `armv7a`, `armv7k`, and `arm64`), and the
+`qbs.buildVariants` property to a list of build variants (such as `debug`
+and `release`), and Qbs will transparently perform the necessary steps to
+produce the various artifacts and combine them into a single bundle.
+
+Since the individual build configurations are completely independent of one
+another, you can continue to use conditional branches in your projects such
+as the following:
+
+```qml
+Properties {
+    condition: qbs.buildVariant === "release"
+    cpp.optimization: "small"
+}
+```
+
+<!-- --8<-- [end:architectures-and-variants] -->

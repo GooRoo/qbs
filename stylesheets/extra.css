@@ -1,0 +1,43 @@
+/*
+ * SPDX-FileContributor: Serhii Olendarenko <sergey.olendarenko@gmail.com>
+ */
+
+:root {
+	--md-hue: 157deg;
+	
+	--md-primary-bg-color: #000000;
+	--md-primary-fg-color: #19EB9A;
+	--md-primary-fg-color--light: #6AF5C0;
+	--md-primary-fg-color--dark: #019A5F;
+	
+	--md-accent-fg-color: var(--md-primary-fg-color--dark);
+}
+	
+[data-md-color-scheme="default"] {
+	--md-typeset-a-color: var(--md-primary-fg-color--dark);
+}
+
+[data-md-color-scheme="slate"] {
+	--md-accent-fg-color: var(--md-primary-fg-color--light);
+}
+
+.md-grid {
+	max-width: 1600px;
+}
+.md-header--shadow {
+	box-shadow: none;
+	transition: none;
+}
+
+.md-typeset a {
+	font-weight: 600;
+}
+
+a.invalid {
+	font-weight: bold;
+	color: red;
+}
+
+.nw {
+	white-space: nowrap;
+}
