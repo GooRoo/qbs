@@ -3,5 +3,6 @@ nav:
   - Introduction.md
   - setup
   - usage
-  - How-tos.md
+  - FAQ:
+    - How-tos.md
   - appendices
