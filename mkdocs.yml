@@ -48,11 +48,11 @@ theme:
 plugins:
   - awesome-pages
   - blog
-  - git-authors:
-      exclude:
-        - index.md
-        - community/index.md
-        - blog/posts/*
+  # - git-authors:
+  #     exclude:
+  #       - index.md
+  #       - community/index.md
+  #       - blog/posts/*
   - git-revision-date-localized:
       exclude:
         - index.md
